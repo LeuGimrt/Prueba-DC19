@@ -1,0 +1,139 @@
+/*RESETS***************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(148, 148, 255);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+#override .row {
+  margin: 0;
+  padding: 0;
+}
+
+#override .col,
+#override .col-1,
+#override .col-10,
+#override .col-11,
+#override .col-12,
+#override .col-2,
+#override .col-3,
+#override .col-4,
+#override .col-5,
+#override .col-6,
+#override .col-7,
+#override .col-8,
+#override .col-9,
+#override .col-auto,
+#override .col-lg,
+#override .col-lg-1,
+#override .col-lg-10,
+#override .col-lg-11,
+#override .col-lg-12,
+#override .col-lg-2,
+#override .col-lg-3,
+#override .col-lg-4,
+#override .col-lg-5,
+#override .col-lg-6,
+#override .col-lg-7,
+#override .col-lg-8,
+#override .col-lg-9,
+#override .col-lg-auto,
+#override .col-md,
+#override .col-md-1,
+#override .col-md-10,
+#override .col-md-11,
+#override .col-md-12,
+#override .col-md-2,
+#override .col-md-3,
+#override .col-md-4,
+#override .col-md-5,
+#override .col-md-6,
+#override .col-md-7,
+#override .col-md-8,
+#override .col-md-9,
+#override .col-md-auto,
+#override .col-sm,
+#override .col-sm-1,
+#override .col-sm-10,
+#override .col-sm-11,
+#override .col-sm-12,
+#override .col-sm-2,
+#override .col-sm-3,
+#override .col-sm-4,
+#override .col-sm-5,
+#override .col-sm-6,
+#override .col-sm-7,
+#override .col-sm-8,
+#override .col-sm-9,
+#override .col-sm-auto,
+#override .col-xl,
+#override .col-xl-1,
+#override .col-xl-10,
+#override .col-xl-11,
+#override .col-xl-12,
+#override .col-xl-2,
+#override .col-xl-3,
+#override .col-xl-4,
+#override .col-xl-5,
+#override .col-xl-6,
+#override .col-xl-7,
+#override .col-xl-8,
+#override .col-xl-9,
+#override .col-xl-auto {
+  padding: 0;
+}
+
+/**************************************************/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid.content {
+  background-color: #fff;
+  padding: 20px 30px;
+  flex: 1;
+}
+
+/*NAVBAR - TOPBAR STYLES*******************************/
+
+
+footer {
+  padding: 20px 10px;
+  background-color: rgb(46, 46, 46);
+  color: #ddd;
+}
