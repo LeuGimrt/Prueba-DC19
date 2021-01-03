@@ -109,6 +109,10 @@ a:active {
   padding: 0;
 }
 
+#override .form-control {
+  margin-bottom: 15px;
+}
+
 /**************************************************/
 
 html,
@@ -127,10 +131,14 @@ body {
   background-color: #fff;
   padding: 20px 30px;
   flex: 1;
+  color: rgb(56, 56, 56);
 }
 
 /*NAVBAR - TOPBAR STYLES*******************************/
 
+.nav-item.dropdown > .nav-link {
+ padding: .5rem 0;
+}
 
 footer {
   padding: 20px 10px;
