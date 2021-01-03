@@ -26,6 +26,10 @@ def internal_server_error(e):
 def foro():
     return render_template('foro.html')
 
+@app.route('/topic')
+def topic():
+    return render_template('topic.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

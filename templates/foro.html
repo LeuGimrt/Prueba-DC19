@@ -103,9 +103,10 @@ Foro
         </div>
     </div>
     
-    <div class="col-12 col-sm-7 col-md-8 col-lg-9">
-        <div class="topic-foro">
-            <a href="#">
+    <div class="col-12 col-sm-7 col-md-8 col-lg-9 foro-topics">
+        <a href="{{ url_for('topic') }}">
+            <div class="topic-foro">
+            
                 <small>Añadido hace 10 horas</small>
                 <h4>Título del tema</h4>
                 <div>
@@ -114,11 +115,13 @@ Foro
                 <ul class="foot-topic">
                     <li><i class="far fa-comment-alt"></i>10 Comentarios</li>
                 </ul>
-            </a>
-        </div>
+            </div>
+        </a>
+
     
-        <div class="topic-foro">
-            <a href="#">
+        <a href="{{ url_for('topic') }}">
+            <div class="topic-foro">
+            
                 <small>Añadido hace 10 horas</small>
                 <h4>Título del tema</h4>
                 <div>
@@ -127,10 +130,12 @@ Foro
                 <ul class="foot-topic">
                     <li><i class="far fa-comment-alt"></i>10 Comentarios</li>
                 </ul>
-            </a>
-        </div>
-        <div class="topic-foro">
-            <a href="#">
+            </div>
+        </a>
+
+        <a href="{{ url_for('topic') }}">
+            <div class="topic-foro">
+            
                 <small>Añadido hace 10 horas</small>
                 <h4>Título del tema</h4>
                 <div>
@@ -139,10 +144,12 @@ Foro
                 <ul class="foot-topic">
                     <li><i class="far fa-comment-alt"></i>10 Comentarios</li>
                 </ul>
-            </a>
-        </div>
-        <div class="topic-foro">
-            <a href="#">
+            </div>
+        </a>
+
+        <a href="{{ url_for('topic') }}">
+            <div class="topic-foro">
+            
                 <small>Añadido hace 10 horas</small>
                 <h4>Título del tema</h4>
                 <div>
@@ -151,8 +158,22 @@ Foro
                 <ul class="foot-topic">
                     <li><i class="far fa-comment-alt"></i>10 Comentarios</li>
                 </ul>
-            </a>
-        </div>
+            </div>
+        </a>
+
+        <a href="{{ url_for('topic') }}">
+            <div class="topic-foro">
+            
+                <small>Añadido hace 10 horas</small>
+                <h4>Título del tema</h4>
+                <div>
+                    <img class="img-topic" src="{{url_for('static', filename = 'img/covid-19.jpg')}}" alt="Covid-19">
+                </div>
+                <ul class="foot-topic">
+                    <li><i class="far fa-comment-alt"></i>10 Comentarios</li>
+                </ul>
+            </div>
+        </a>
     </div>
 </div>
 
