@@ -27,6 +27,11 @@ i {
     padding: 0 5px;
 }
 
+#override .sidebar-foro {
+    position: sticky;
+    top: 10px;
+}
+
 #override .sidebar-foro > div {
     border: 1px solid rgb(218, 218, 218);
     border-radius: 8px;
@@ -62,4 +67,20 @@ i {
     padding: 10px 10px;
     border-bottom: 1px solid rgb(218, 218, 218);
 
+}
+
+@media (max-width: 576px) {
+    .popular-topic {
+        display: none;
+    }
+
+    #override .sidebar-foro {
+        position: static;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #override .container-fluid.content {
+        padding: 20px 0;
+    }
 }

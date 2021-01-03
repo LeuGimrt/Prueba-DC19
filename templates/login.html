@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/login-register.css') }}">
+{% endblock %}
+
+{% block title %}
+Acceder
+{% endblock %}
+
+{% block content %}
+<form class="formulario">
+
+    <h1>Iniciar Sesión</h1>
+    <div class="contenedor">
+
+
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Correo Electronico">
+
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" placeholder="Contraseña">
+
+        </div>
+        <p></p>
+        <div class="checkbox">
+            <label>
+                <input id="remember_me" name="remember_me" type="checkbox" value="y"> Mantenerme conectado
+            </label>
+        </div>
+        <p></p>
+        <a href="#" class="btn btn-block btn-dark">Accceder</a>
+
+        <p>¿Olvidaste tu contraseña? <a class="link" href="#">Haga aqui para restablecerla </a></p>
+        <p>¿Nuevo Usuario? <a class="link" href="{{ url_for('register') }}">Registrate aqui </a></p>
+    </div>
+</form>
+
+{% endblock %}
