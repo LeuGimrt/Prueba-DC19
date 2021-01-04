@@ -14,17 +14,27 @@ Foro
 
 <div class="row" style="align-items: flex-start;">
     <div class="col-12 col-sm-5 col-md-4 col-lg-3 sidebar-foro">
-        <div class="new-topic">
-            <div class="new-topic-head">Añadir nuevo tema</div>
+        <h5 class="new-topic-head">Añadir nuevo tema</h5>
+        <div class="new-topic collapse" id="new-topic-foro">   
+
             <form class="form-new-topic" action="">
                 <input type="text" class="form-control" name="in-new-topic" id="in-new-topic" placeholder="Nuevo Tema...">
+                <div class="form-group">
+                    <textarea name="topic-description" id="topic-description" cols="30" rows="6" class="form-control" placeholder="Descripción del tema"></textarea>
+                </div>
                 <div class="custom-file mb-3">
                     <input type="file" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Añadir imagen</label>
                 </div>
                 <button type="submit" class="btn btn-dark btn-block">Añadir</button>
-            </form>
+            </form>   
         </div>
+        <div title="Add topic" class="d-flex align-content-center justify-content-center">
+            <button data-toggle="collapse" data-target="#new-topic-foro" class="btn btn-dark btn-block collapsed newTopicBtn px-5"
+                aria-expanded="false" aria-controls="new-topic-foro"><em class="fas fa-caret-down" aria-hidden="true"></em></button>
+        </div>
+
+        <!-- POPULAR TOPICS -->
         <div class="popular-topic">
             <div class="popular-topic-head">
                 Temas populares
@@ -176,6 +186,7 @@ Foro
         </a>
     </div>
 </div>
+
 
 
 
