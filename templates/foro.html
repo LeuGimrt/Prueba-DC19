@@ -3,6 +3,7 @@
 {% block styles %}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static', filename = 'css/foro.css')}}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 {% endblock %}
 
 {% block title %}
@@ -14,9 +15,9 @@ Foro
 
 <div class="row" style="align-items: flex-start;">
     <div class="col-12 col-sm-5 col-md-4 col-lg-3 sidebar-foro">
-        <h5 class="new-topic-head">Añadir nuevo tema</h5>
+        
+        <!-- NEW TOPIC -->
         <div class="new-topic collapse" id="new-topic-foro">   
-
             <form class="form-new-topic" action="">
                 <input type="text" class="form-control" name="in-new-topic" id="in-new-topic" placeholder="Nuevo tema...">
                 <div class="form-group">
@@ -26,12 +27,11 @@ Foro
                     <input type="file" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Añadir imagen</label>
                 </div>
-                <button type="submit" class="btn btn-dark btn-block">Añadir</button>
+                <button type="submit" class="btn btn-dark btn-block">Save</button>
             </form>   
         </div>
         <div title="Add topic" class="d-flex align-content-center justify-content-center">
-            <button data-toggle="collapse" data-target="#new-topic-foro" class="btn btn-dark btn-block collapsed newTopicBtn px-5"
-                aria-expanded="false" aria-controls="new-topic-foro"><em class="fas fa-caret-down" aria-hidden="true"></em></button>
+            <button id="newTopicBtn" data-toggle="collapse" data-target="#new-topic-foro" class="btn btn-dark btn-block collapsed px-5" aria-expanded="false" aria-controls="new-topic-foro">Añadir tema&nbsp;&nbsp;&nbsp;▼</button>
         </div>
 
         <!-- POPULAR TOPICS -->
@@ -187,7 +187,19 @@ Foro
     </div>
 </div>
 
-
+<script>
+    var btnNew = document.getElementById('newTopicBtn');
+    var clics = 0;
+    
+    btnNew.onclick = function(){
+        clics++;
+        if(clics % 2 === 0){
+            btnNew.innerHTML = `Añadir tema&nbsp&nbsp&nbsp▼`;
+        }else{
+            btnNew.innerHTML = `Ocultar&nbsp&nbsp&nbsp▲`;
+        }
+    }
+</script>
 
 
 {%  endblock %}
